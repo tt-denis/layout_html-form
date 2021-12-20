@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()" autocomplete="off" ></form>
     <fieldset class="fieldset">
       <legend>Personal information</legend>
@@ -30,13 +28,14 @@
         >
       </div>
       <div class="form-field">
-        <label for="old">How old are You?:</label>
+        <label for="old">How old are You?</label>
         <input
               type="number"
               min="1"
               max="100"
               name="old"
               id="old"
+              value="12"
         >
       </div>
       <div class="form-field">
@@ -48,7 +47,7 @@
         >
       </div>
       <div class="form-field">
-        <label for="accept">I accept the trem of the agreement</label>
+        <label for="accept">I accept the term of the agreement</label>
         <input
               type="checkbox"
               name="accept"
@@ -58,7 +57,7 @@
     </fieldset>
 
     <fieldset class="fieldset">
-      <legend>Registrarion</legend>
+      <legend>Registration</legend>
       <div class="form-field">
         <label for="email">
           E-mail:
@@ -68,12 +67,12 @@
                 placeholder="email@example.com"
           >
         </label>
-        <div class="form-field">
-          <label for="password">
-            Password:
-            <input type="text">
-          </label>
-        </div>
+      </div>
+      <div class="form-field">
+        <label for="password">
+          Password:
+          <input type="text">
+        </label>
       </div>
     </fieldset>
 
@@ -121,9 +120,9 @@
         </label>
       </div>
 
-      <div class="form-feild">
+      <div class="form-field">
         <label for="car">
-          What are your brand cars?
+          What are your favorite brand of cars?
           <select name="car" id="car" multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -133,7 +132,7 @@
         </label>
       </div>
 
-      <div class="form-field">
+      <div class="form-feild">
         <label for="rate">
           How do you rate our work?
           <input
@@ -146,21 +145,22 @@
     </fieldset>
 
     <fieldset class="fieldset">
-      <legend>Addition info:</legend>
-      <label for="feedback">Comments:</label>
-      <textarea
+      <legend>Additional info:</legend>
+      <div class="form-field">
+        <label for="feedback">Comments:</label>
+        <textarea
                 name="feedback"
                 id="feedback"
                 cols="20"
                 rows="2">
-      </textarea>
+        </textarea>
+      </div>
 
       <div class="form-field">
         <label for="longer">Would you recommend us?</label>
         <select name="longer" id="longer">
-          <option value="yes1">Yes</option>
-          <option value="yes2">Definitely yes</option>
-          <option value="no">No</option>
+          <option value="yes1">yes</option>
+          <option value="no">no</option>
         </select>
       </div>
 
